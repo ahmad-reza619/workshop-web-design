@@ -1,0 +1,101 @@
+@import url("navbar.css");
+@import url("footer.css");
+
+.contact-header {
+    padding: 80px 170px;
+    border-bottom: 1px solid gray;
+}
+
+.contact-header > .contact-header-text {
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-header-text > h1:first-child {
+    font-size: 32px;
+}
+
+.contact-header-text > h1:nth-child(2) {
+    font-size: 42px;
+}
+
+.contact-header-text > h1 {
+    font-weight: 400;
+}
+
+.contact-header > div {
+    display: flex;
+    margin-top: 64px;
+    gap: 1rem;
+}
+
+.contact-header > div > div {
+    padding: 85px 90px;
+    background-color: #C4C4C4;
+    width: 100%;
+    font-size: 32px;
+}
+
+.faq {
+    margin: 122px 170px;
+    width: 530px;
+}
+
+.faq h1 {
+    margin-bottom: 64px;
+}
+
+.faq-q {
+    cursor: pointer;
+}
+.faq-a {
+    display: none;
+}
+
+.faq-active {
+    display: block;
+    margin-top: 1rem;
+}
+
+.faq-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 150px 170px;
+}
+
+.contact-form > div {
+    width: 550px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 32px;
+}
+
+input, textarea {
+    padding: 16px;
+    background: #E6E6E6;
+    border: none;
+}
+
+button {
+    padding: 16px;
+    border: 2px solid black;
+    font-weight: 700;
+    width: 90px;
+    background: white;
+}
+
+.contact-form h1 {
+    font-size: 42px;
+}

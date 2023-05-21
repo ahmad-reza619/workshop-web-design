@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  padding: 30px 64px;
+  border-bottom: 1px solid gray;
+}
+
+.space {
+  flex: 1;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}

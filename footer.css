@@ -1,0 +1,37 @@
+.project-call {
+  height: 500px;
+  padding: 8rem;
+  display: flex;
+  gap: 30rem;
+  border-bottom: 1px solid gray;
+}
+
+.project-call * {
+  text-align: left;
+}
+
+.project-call > .project-call-wording, .project-call-contact {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-call > .project-call-wording > p {
+  margin-top: 55px;
+}
+
+.project-call-contact {
+  gap: .5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 64px;
+}
+
+.footer > div {
+  display: flex;
+  gap: 1rem;
+}
