@@ -3,7 +3,8 @@
   padding: 8rem;
   display: flex;
   gap: 30rem;
-  border-bottom: 1px solid gray;
+  background-color: rgba(0, 0, 0, .05);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .project-call * {
@@ -17,12 +18,12 @@
   justify-content: center;
 }
 
-.project-call > .project-call-wording > p {
+.project-call > .project-call-wording > button {
   margin-top: 55px;
 }
 
 .project-call-contact {
-  gap: .5rem;
+  width: 200px;
 }
 
 .footer {

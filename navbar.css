@@ -14,7 +14,7 @@ a {
 .navbar {
   display: flex;
   padding: 30px 64px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .space {
@@ -24,4 +24,19 @@ a {
 .navigation {
   display: flex;
   gap: 20px;
+}
+
+.button {
+  padding: 16px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  min-width: 60px;
+  cursor: pointer;
+  background: linear-gradient(119.33deg, #0488F5 12.89%, #080DFA 97.13%);
+box-shadow: 11px 13px 18px -8px rgba(0, 0, 0, 0.25);
+}
+
+img.non-round {
+  border-radius: 0;
 }

@@ -57,9 +57,16 @@
     </div>
 
     <div class="photo-gallery">
-        <div></div>
-        <div></div>
-        <div></div>
+        <span class="flag"></span>
+        <div><img class="non-round"
+                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                alt="macbook"></div>
+        <div> <img class="non-round"
+                src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                alt="climb"> </div>
+        <div><img
+                src="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                alt="workspace" class="non-round"></div>
     </div>
 
     <div class="benefits">
@@ -146,8 +153,8 @@
 
     <div class="tabs">
         <div class="tabs-title">
-            <div class="tab-title tab-title-active">Tools I Use for Design</div>
-            <div class="tab-title">Tools I Use for Development</div>
+            <div class="tab-title tab-title-active" data-activate="0">Tools I Use for Design</div>
+            <div class="tab-title" data-activate="1">Tools I Use for Development</div>
         </div>
         <div class="tab-content tab-content-active" data-tabno="0">
             <div>Sketch</div>
@@ -179,11 +186,29 @@
     <div class="footer">
         <p>(c) Copyright John 2023. All rights reserved.</p>
         <div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div><i class="fab fa-twitter"></i></div>
+            <div><i class="fab fa-instagram"></i></div>
+            <div><i class="fab fa-dribbble"></i></div>
         </div>
     </div>
+    <script>
+            const tabs = document.querySelectorAll(".tab-title");
+            console.log({ tabs })
+            tabs.forEach(tab => (
+                tab.addEventListener("click", (evt) => {
+                    tabs.forEach(t => t.classList.remove("tab-title-active"));
+                    const tabActive = tab.dataset['activate']
+                    document.querySelectorAll(".tab-content").forEach(t => t.classList.remove("tab-content-active"))
+                    const tabsContent = document.querySelector(".tab-content[data-tabno=\"" + tabActive + "\"]");
+                    tabsContent.classList.add("tab-content-active");
+                    if (tab.classList.contains('tab-title-active')) {
+                        tab.classList.remove("tab-title-active")
+                    } else {
+                        tab.classList.add("tab-title-active")
+                    }
+                })
+            ))
+    </script>
 </body>
 
 </html>

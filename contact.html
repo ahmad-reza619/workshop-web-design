@@ -31,7 +31,7 @@
 
     <div class="contact-header">
         <div class="contact-header-text">
-            <h1>I’m currently available for freelance work.</h1>
+            <h1>I’m currently <span style="color: #080DFA;">available</span> for freelance work.</h1>
             <h1>If you’re looking for a designer and developer that likes to get stuff done, let’s talk.</h1>
         </div>
         <div>
@@ -83,11 +83,25 @@
         <div class="footer">
             <p>(c) Copyright John 2023. All rights reserved.</p>
             <div>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+                <div><i class="fab fa-twitter"></i></div>
+                <div><i class="fab fa-instagram"></i></div>
+                <div><i class="fab fa-dribbble"></i></div>
             </div>
         </div>
+        <script>
+            const faqQuestions = document.querySelectorAll(".faq-q");
+            faqQuestions.forEach(fq => (
+                fq.addEventListener("click", (evt) => {
+                    const text = fq.innerText.slice(0, 1) === '+' ? '-' : '+';
+                    fq.innerText = text + fq.innerText.slice(1)
+                    if (fq.nextSibling.nextSibling.classList.contains("faq-active")) {
+                        fq.nextSibling.nextSibling.classList.remove("faq-active");
+                    } else {
+                        fq.nextSibling.nextSibling.classList.add("faq-active");
+                    }
+                })
+            ))
+        </script>
         </body>
         
         </html>
